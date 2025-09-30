@@ -13,11 +13,10 @@ import random
 lotto = () # Create Empty List
 
 while len(lotto) < 6:
-    lotto = lotto + (random.randint(1,10),)
-    lotto.append(num)
-    if num in lotto:
-        print("Duplicate number =", num)
-    else:
+    num= random.randint(1, 50)
+    if num not in lotto:
         lotto.append(num)
+    else:
+        print("Duplicate number =", num)
 
-print("lottery numbers =", lotto)
+    print("lottery numbers =", lotto)
